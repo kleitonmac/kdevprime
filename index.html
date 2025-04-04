@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Landing page de uma loja de vendas com produtos em destaque, promoções e vantagens exclusivas.">
+  <title>DEV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="icon" type="image/png" href="https://img.icons8.com/?size=100&id=ZKlrr1SjBHC8&format=png&color=000000">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("service_hwj3yyi" , "template_f9lfv7l"); // Substitua pelo seu public key
+    })();
+  </script>
+
+</head>
+<body class="font-inter bg-white text-gray-800">
+
+  <div id="root"></div>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20 px-4 md:px-6 text-center">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Ofertas Incríveis! Para sua landing Page</h1>
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Profissional somente na K-dev</h1>
+    <p class="text-lg md:text-xl mb-6">Produtos selecionados com descontos exclusivos por tempo limitado.</p>
+    <a href="#produtos" class="bg-white text-blue-700 font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-gray-100 transition">Ver Ofertas</a>
+  </section>
+
+
+  <div>
+  <!-- Container para as duas sections -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 py-16 px-4 md:px-6 max-w-6xl mx-auto">
+    <!-- Primeira Section -->
+    <section id="produtos" class="border rounded-2xl p-4 shadow hover:shadow-xl transition-transform hover:scale-105">
+      <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="border rounded-2xl p-4 shadow hover:shadow-xl transition-transform hover:scale-105">
+          <img src="/img/novoestilo.png" class="produtos-fotos w-full rounded-xl mb-4">
+          <a href="https://novoestilobarbearia-github-io.vercel.app/">
+            <h3 class="text-xl font-semibold mb-2">Modelo 1</h3>
+          </a>
+          <p class="text-gray-600 mb-3">Produto criado para atender uma barbearia.</p>
+          <span class="text-lg font-bold text-blue-600 mb-2 block">R$ 350,00</span>
+          <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">Comprar Agora</button>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Segunda Section -->
+    <section id="produtos" class="border rounded-2xl p-4 shadow hover:shadow-xl tra
+      <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="border rounded-2xl p-4 shadow hover:shadow-xl transition-transform hover:scale-105">
+          <img src="/img/cafeteria.png" class="produto-fotos w-full rounded-xl mb-4">
+          <h3 class="text-xl font-semibold mb-2">Modelo 2</h3>
+          <p class="text-gray-600 mb-3">Produto criado para atender um cafeteria.</p>
+          <span class="text-lg font-bold text-blue-600 mb-2 block">R$ 350,00</span>
+          <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">Comprar Agora</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+
+
+  <!-- Benefícios -->
+  <section class="bg-gray-100 py-16 px-4 md:px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10">Por que comprar conosco?</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+
+        <div>
+          <img src="https://img.icons8.com/ios-filled/50/return.png" class="mx-auto mb-2"/>
+          <p class="font-semibold">Devolução Garantida</p>
+        </div>
+        <div>
+          <img src="https://img.icons8.com/ios-filled/50/lock.png" class="mx-auto mb-2"/>
+          <p class="font-semibold">Pagamento Seguro</p>
+        </div>
+        <div>
+          <img src="https://img.icons8.com/ios-filled/50/customer-support.png" class="mx-auto mb-2"/>
+          <p class="font-semibold">Suporte 24/7</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section class="py-16 px-4 md:px-6 bg-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10">O que nossos clientes dizem</h2>
+      <div class="space-y-8">
+        <blockquote class="bg-gray-100 p-6 rounded-xl shadow">
+          <p class="text-lg italic">“Produto chegou rápido e em perfeito estado. Super recomendo!”</p>
+          <cite class="block mt-4 text-gray-700">— Alana Maria</cite>
+        </blockquote>
+      </div>
+    </div>
+ 
+    <div class="max-w-4xl mx-auto text-center">
+          <p class="text-lg italic">“Lading page super responsiva e entrega rápida.Super recomendo!”</p>
+          <cite class="block mt-4 text-gray-700">— Carlos</cite>
+      </div>
+    </section>
+
+
+  <!-- Rodapé -->
+  <footer class="bg-gray-800 text-white py-10 px-4 md:px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h4 class="font-bold mb-2">K-dev</h4>
+        <p>Oferecendo qualidade e confiança para você comprar com tranquilidade.</p>
+      </div>
+      <div>
+        <h4 class="font-bold mb-2">Contato</h4>
+        <p>Email: kdevprofissional@gmail.com</p>
+        <p>WhatsApp: (27) 98191-1375</p>
+      </div>
+      <div>
+        <h4 class="font-bold mb-2">Redes Sociais</h4>
+        <p>Instagram | Facebook | Twitter</p>
+      </div>
+    </div>
+    <div class="text-center mt-8 text-sm text-gray-400">&copy; 2025 K-dev Todos os direitos reservados.</div>
+  </footer>
+
+  <!-- Formulário de Contato -->
+  <section>
+    <h3>Fale com a gente</h3>
+    <form id="form-contato">
+      <div>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+      <div>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+      </div>
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+  </section>
+
+<script>
+  document.getElementById('form-contato').addEventListener('submit', function(e) {
+    e.preventDefault();
+    emailjs.sendForm('service_hwj3yyi', 'template_f9lfv7l', this)
+      .then(function(response) {
+        alert('Mensagem enviada com sucesso! 🚀');
+        document.getElementById('form-contato').reset();
+      }, function(error) {
+        alert('Erro ao enviar mensagem. 😥\n' + JSON.stringify(error));
+      });
+  });
+</script>
+  </section>
+  
+  <!-- Formulário de Pagamento -->
+  <section class="bg-gray-50 py-16 px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">Pagamento</h2>
+    <form action="pagamento/index.html" method="POST" class="max-w-2xl mx-auto space-y-6">
+      <div>
+        <label for="nome-cartao" class="block text-sm font-medium text-gray-700">Nome no Cartão</label>
+        <input type="text" id="nome-cartao" name="nome-cartao" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-green-500 focus:border-green-500">
+      </div>
+      <div>
+        <label for="numero-cartao" class="block text-sm font-medium text-gray-700">Número do Cartão</label>
+        <input type="text" id="numero-cartao" name="numero-cartao" required maxlength="19" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-green-500 focus:border-green-500">
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <label for="validade" class="block text-sm font-medium text-gray-700">Validade</label>
+          <input type="text" id="validade" name="validade" placeholder="MM/AA" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-green-500 focus:border-green-500">
+        </div>
+        <div>
+          <label for="cvv" class="block text-sm font-medium text-gray-700">CVV</label>
+          <input type="text" id="cvv" name="cvv" required maxlength="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-green-500 focus:border-green-500">
+        </div>
+      </div>
+  
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-2">Ou pague com Pix</label>
+        <input type="text" value="kdevprofissional@gmail.com" readonly class="bg-gray-100 border border-gray-300 rounded-md w-full p-2 text-gray-700 cursor-text">
+        <div class="flex items-center gap-4">
+            <button onclick="window.open('/img/Captura de tela 2025-04-03 104517.png', '_blank')" 
+                    class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition"> Abrir QR Code
+                </div>
+            </button>
+          </div>
+        </div>
+      <div>
+        <button type="submit" class="bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-700 transition">Finalizar Pagamento</button>
+        <div/>
+    </form>
+  </section>
+  
+
+  <!-- Botão Flutuante WhatsApp -->
+  <a href="https://wa.me/5527981911375" target="_blank" class="whatsapp-float bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-transform transform hover:scale-110">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="32" height="32">
+      <path d="M12.04 2.003a10 10 0 00-8.758 14.89l-1.15 4.21 4.33-1.135a10 10 0 1013.038-13.533A9.975 9.975 0 0012.04 2.003zm5.832 14.67c-.25.698-1.45 1.37-2.012 1.414-.516.038-1.13.054-1.824-.19a11.67 11.67 0 01-2.28-1.062 11.56 11.56 0 01-3.606-3.755c-.088-.152-.692-1.155-.692-2.2 0-1.044.438-1.558.592-1.75.206-.26.45-.326.6-.326h.45c.131 0 .3.021.45.34.175.39.597 1.35.648 1.45.05.1.088.218.013.351-.075.131-.113.212-.225.327-.113.113-.236.25-.338.338-.113.1-.238.212-.103.417.131.2.582.963 1.25 1.562.863.768 1.587 1.006 1.787 1.12.2.113.313.1.426-.062.113-.15.487-.562.616-.75.125-.188.263-.156.45-.094.188.063 1.188.562 1.388.662.2.1.338.15.388.231.05.075.05.675-.2 1.375z"/>
+    </svg>
+  </a>
+  <script src="script.js"></script> 
+  <script src="server.js"></script>   
+
+</body>
+</html>
