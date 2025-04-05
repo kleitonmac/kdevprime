@@ -37,7 +37,7 @@
     <section id="produtos" class="border rounded-2xl p-4 shadow hover:shadow-xl transition-transform hover:scale-105">
       <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         <div class="border rounded-2xl p-4 shadow hover:shadow-xl transition-transform hover:scale-105">
-          <img src="/img/novoestilo.png" class="produtos-fotos w-full rounded-xl mb-4">
+          <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80" class="produtos-fotos w-full rounded-xl mb-4">
           <a href="https://novoestilobarbearia-github-io.vercel.app/">
             <h3 class="text-xl font-semibold mb-2">Modelo 1</h3>
           </a>
@@ -129,7 +129,8 @@
 
   <!-- Formulário de Contato -->
   <section>
-    <h3>Fale com a gente</h3>
+    <h3 class="paragrafo">Fale com a gente</h3>
+    <form action"https://dashboard.emailjs.com/admin/templates/ls4uvg7" method="POST">
     <form id="form-contato">
       <div>
         <label for="nome">Nome</label>
@@ -143,8 +144,10 @@
         <label for="mensagem">Mensagem</label>
         <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
       </div>
-      <button type="submit">Enviar Mensagem</button>
+      <button type="submit"
+      class="w-full bg-green-600 text-white font-semibold py-3 rounded-md hover:bg-blue-700 active:scale-95 transition">Enviar Mensagem</button>
     </form>
+  </form>
   </section>
 
 <script>
@@ -162,41 +165,65 @@
   </section>
   
   <!-- Formulário de Pagamento -->
-  <section class="bg-gray-50 py-16 px-6">
-    <h2 class="text-3xl font-bold text-center mb-10">Pagamento</h2>
-    <form action="pagamento/index.html" method="POST" class="max-w-2xl mx-auto space-y-6">
+  <section class="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+    <h3 class="text-3xl font-bold text-center text-gray-900 mb-10">Pagamentos</h3>
+    
+    <form action="pagamento/index.html" method="POST" class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-md space-y-6">
+      
       <div>
         <label for="nome-cartao" class="block text-sm font-medium text-gray-700">Nome no Cartão</label>
-        <input type="text" id="nome-cartao" name="nome-cartao" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-green-500 focus:border-green-500">
+        <input type="text" id="nome-cartao" name="nome-cartao" required 
+               class="mt-1 block w-full rounded-md border border-gray-300 p-3 shadow-sm focus:ring-green-500 focus:border-green-500 transition">
       </div>
+      
       <div>
         <label for="numero-cartao" class="block text-sm font-medium text-gray-700">Número do Cartão</label>
-        <input type="text" id="numero-cartao" name="numero-cartao" required maxlength="19" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-green-500 focus:border-green-500">
+        <input type="text" id="numero-cartao" name="numero-cartao" required maxlength="19"
+               class="mt-1 block w-full rounded-md border border-gray-300 p-3 shadow-sm focus:ring-green-500 focus:border-green-500 transition">
       </div>
-      <div class="grid grid-cols-2 gap-4">
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label for="validade" class="block text-sm font-medium text-gray-700">Validade</label>
-          <input type="text" id="validade" name="validade" placeholder="MM/AA" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-green-500 focus:border-green-500">
+          <input type="text" id="validade" name="validade" placeholder="MM/AA" required
+                 class="mt-1 block w-full rounded-md border border-gray-300 p-3 shadow-sm focus:ring-green-500 focus:border-green-500 transition">
         </div>
+        
         <div>
           <label for="cvv" class="block text-sm font-medium text-gray-700">CVV</label>
-          <input type="text" id="cvv" name="cvv" required maxlength="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-green-500 focus:border-green-500">
+          <input type="text" id="cvv" name="cvv" required maxlength="4"
+                 class="mt-1 block w-full rounded-md border border-gray-300 p-3 shadow-sm focus:ring-green-500 focus:border-green-500 transition">
         </div>
       </div>
+      
+      <button type="submit" 
+              class="w-full bg-green-600 text-white font-semibold py-3 rounded-md hover:bg-green-700 active:scale-95 transition">
+              <a href="/pagamentos.html">Finalizar Pagamento</a>
+      </button>
+      
+    </form>
+  </section>
+  
   
       <div>
+        <form>
         <label class="block text-sm font-medium text-gray-700 mb-2">Ou pague com Pix</label>
         <input type="text" value="kdevprofissional@gmail.com" readonly class="bg-gray-100 border border-gray-300 rounded-md w-full p-2 text-gray-700 cursor-text">
         <div class="flex items-center gap-4">
             <button onclick="window.open('/img/Captura de tela 2025-04-03 104517.png', '_blank')" 
                     class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition"> Abrir QR Code
                 </div>
-            </button>
+            </button> 
+            <form onsubmit="event.preventDefault(); window.location.href='/pagamentos.html'>
+              <button type="submit" class="bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-700 transition">
+
+                <button onclick="window.open('/pagamentos.html', '_blank')" 
+                class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-black transition"> Finalizar Pagamento
+
+              </button>
+            </form>
           </div>
         </div>
-      <div>
-        <button type="submit" class="bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-700 transition">Finalizar Pagamento</button>
-        <div/>
     </form>
   </section>
   

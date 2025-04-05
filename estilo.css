@@ -15,11 +15,10 @@ section {
   padding: 60px 20px;
 }
 
-h3 {
+.paragrafo {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
   color: #1f2937;
-  margin-bottom: 40px;
 }
 
 form {

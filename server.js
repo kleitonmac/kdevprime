@@ -1,4 +1,4 @@
-fetch('SUA_URL', {
+fetch('https://k-dev-nine.vercel.app/', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
