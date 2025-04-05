@@ -1,5 +1,5 @@
 (function() {
-    emailjs.init("template_f9lfv7l"); // Troque pelo seu Public Key do EmailJS
+    emailjs.init("pTZyhJYaccnO1e2Wy"); // Troque pelo seu Public Key do EmailJS
   })();
   
   const form = document.getElementById("form-contato");
@@ -13,7 +13,7 @@
     const mensagem = form.mensagem.value;
     const email = form.email.value;
   
-    emailjs.send("service_hwj3yyi" , {
+    emailjs.send("service_hwj3yyi", "template_f9lfv7l", {
       nome: nome,
       titulo: titulo,
       mensagem: mensagem,
