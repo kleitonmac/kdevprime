@@ -11,12 +11,14 @@
 
     const nome = form.nome.value;
     const titulo = form.titulo.value;
-    const mensagem = form.mensagem.value;
+    const mensagem = form.mensagem.value
+    const; email = form.email.value
 
     emailjs.send("service_hwj3yyi", "template_f9lfv7l", {
       nome: nome,
       titulo: titulo,
       mensagem: mensagem
+        email: email
     })
     .then(function(response) {
       console.log("Sucesso!", response.status, response.text);
