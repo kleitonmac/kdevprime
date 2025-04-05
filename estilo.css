@@ -19,7 +19,7 @@ body {
   background: transparent;
 }
 
-.formulario{
+#contato{
   padding: 60px 20px;
   background-color: #ffffff;
 }
@@ -179,3 +179,60 @@ button:active {
       transform: translateY(-10px);
     }
   }
+
+
+
+/* Pequenos (em pé) */
+@media (max-width: 320px) {
+  /* iPhone SE, Androids pequenos */
+}
+
+/* Médios */
+@media (max-width: 375px) {
+  /* iPhone X, 12 mini */
+}
+
+@media (max-width: 414px) {
+  /* iPhone XR, 11, Plus models */
+}
+
+/* Grandes (até tablets pequenos) */
+@media (max-width: 480px) {
+  /* Galaxy Note, celulares grandes */
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* iPad em pé, tablets Android pequenos */
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* iPad deitado, tablets médios */
+}
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  /* Laptops comuns, resoluções HD */
+}
+
+
+@media (min-width: 1281px) and (max-width: 1536px) {
+  /* Monitores Full HD */
+}
+
+@media (min-width: 1537px) {
+  /* Telas 2K, 4K ou maiores */
+}
+
+
+/* Smartphones */
+@media (max-width: 640px) {}
+
+/* Tablets */
+@media (min-width: 641px) and (max-width: 1024px) {}
+
+/* Laptops */
+@media (min-width: 1025px) and (max-width: 1440px) {}
+
+/* Desktops grandes */
+@media (min-width: 1441px) {}
